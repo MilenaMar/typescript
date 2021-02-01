@@ -146,5 +146,12 @@ class Animal {
 let cat = new Animal('cat');
 cat.move(10);
 
+// If we have two clases 
 
+class Bird extends Animal {
+    fly(distanceinMeters: number){
+        console.log(`${this.name} flew ${distanceinMeters}m.`)
+    // because name was declare as private we will receive and error
+    }
+}
 
