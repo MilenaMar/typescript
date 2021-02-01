@@ -129,5 +129,22 @@ let point3D: Point3D = {x:0, y:10, z:20}
 /* in Typescript structural typing extra information is ok less information is Not!*/
 //point2D = point3D // Duck typing;
 
+// Classes in Typescript
+
+class Animal {
+    name; 
+
+    constructor(name){
+        this.name = name; 
+    }
+
+    move(distanceinMeters){
+        console.log(`${this.name} moved ${distanceinMeters}m.`)
+    }
+}
+
+let cat = new Animal('cat');
+cat.move(10);
+
 
 
