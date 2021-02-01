@@ -155,3 +155,16 @@ class Bird extends Animal {
     }
 }
 
+
+//Target Compiler Option 
+
+class AnimalSecond {
+    private name: string; 
+    constructor(name: string){
+        this.name = name; 
+    }
+
+    move(distanceinMeters: number) : void{
+        console.log(`${this.name} moved ${distanceinMeters}m.`)
+    }
+}
