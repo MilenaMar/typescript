@@ -132,13 +132,13 @@ let point3D: Point3D = {x:0, y:10, z:20}
 // Classes in Typescript
 
 class Animal {
-    name: string; 
+   private name: string; // if private is use the name can't be acces outside the class
 
     constructor(name:string){
         this.name = name; 
     }
 
-    move(distanceinMeters:number): void{
+    public move(distanceinMeters:number): void{
         console.log(`${this.name} moved ${distanceinMeters}m.`)
     }
 }
