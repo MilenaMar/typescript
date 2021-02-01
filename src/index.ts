@@ -132,13 +132,13 @@ let point3D: Point3D = {x:0, y:10, z:20}
 // Classes in Typescript
 
 class Animal {
-    name; 
+    name: string; 
 
-    constructor(name){
+    constructor(name:string){
         this.name = name; 
     }
 
-    move(distanceinMeters){
+    move(distanceinMeters:number): void{
         console.log(`${this.name} moved ${distanceinMeters}m.`)
     }
 }
